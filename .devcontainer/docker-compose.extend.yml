@@ -1,0 +1,7 @@
+version: '3'
+services:
+  vsce:
+    volumes:
+      - ~/.bashrc:/home/code/.bashrc
+    # Overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 1000; do :; done"

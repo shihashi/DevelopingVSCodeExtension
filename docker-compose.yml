@@ -1,0 +1,8 @@
+version: '3'
+services:
+  vsce:
+    build: .
+    tty: true
+    volumes:
+      - ./vsce/:/home/code/vsce
+    working_dir: /home/code/vsce
